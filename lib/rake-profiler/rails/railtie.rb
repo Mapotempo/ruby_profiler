@@ -6,4 +6,10 @@ module RakeProfiler::Rails
 
     app.middleware.insert(0, RakeProfiler::Middleware)
   end
+
+  class Railtie < ::Rails::Railtie
+    initializer "rake-profiler.configure_rails_initialization" do |app|
+      RackProfiler::Rails.initialize!(app)
+    end
+  end
 end
