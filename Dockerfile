@@ -10,15 +10,15 @@ RUN apk add --no-cache --update \
     bash \
     cmake
 
-# Set environment variables
-ENV LANG=C.UTF-8 \
-    BUNDLE_PATH=/gems \
-    GEM_HOME=/gems \
-    BUNDLE_JOBS=4 \
-    BUNDLE_RETRY=3
-
 # Set the working directory
 WORKDIR /app
+
+# Set environment variables
+ENV LANG=C.UTF-8 \
+    BUNDLE_PATH=/app/vendor \
+    GEM_HOME=/app/vendor \
+    BUNDLE_JOBS=4 \
+    BUNDLE_RETRY=3
 
 # Copy the rest of the application code into the image
 COPY . .
