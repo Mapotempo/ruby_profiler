@@ -37,8 +37,6 @@ module RakeProfiler
       File.open(File.join(path, filename), 'wb') do |f|
         f.write JSON.generate(results)
       end
-
-      Rails.logger.info "#{path}/#{filename} saved"
     end
   end
 end
