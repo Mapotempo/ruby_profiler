@@ -9,7 +9,7 @@ module RakeProfiler::RailsProfiler
 
   class Railtie < ::Rails::Railtie
     initializer "rake-profiler.configure_rails_initialization" do |app|
-      RackProfiler::RailsProfiler.initialize!(app)
+      ::RakeProfiler::RailsProfiler.initialize!(app)
     end
   end
 end
