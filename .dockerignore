@@ -1,0 +1,35 @@
+# Ignore bundler config
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+/coverage/
+
+# Ignore the Gemfile.lock, because it generally isn't needed in gems
+Gemfile.lock
+
+# Ignore system-generated files
+.DS_Store
+
+# Ignore Yard documentation
+/doc/
+/.yardoc
+/_yardoc/
+.yardtmp
+
+# Ignore test and spec artifacts
+/test/tmp
+/test/version_tmp.txt
+/spec/tmp
+/spec/reports/
+
+# Ignore build output
+/pkg
+
+# Ignore any other possible sensitive files
+/.env
+.env.*
+
+# rspec failure tracking
+.rspec_status
