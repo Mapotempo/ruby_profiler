@@ -1,8 +1,8 @@
-require_relative 'lib/rake/profiler/version'
+require_relative 'lib/rake-profiler/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rake-profiler"
-  spec.version       = Rake::Profiler::VERSION
+  spec.version       = RakeProfiler::VERSION
   spec.authors       = ["Giallombardo Nathan"]
   spec.email         = ["nagiallombardo@gmail.com"]
 
@@ -17,6 +17,9 @@ Gem::Specification.new do |spec|
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/giallon/rake-profiler"
   spec.metadata["changelog_uri"] = "https://github.com/giallon/rake-profiler"
+
+  spec.add_development_dependency 'rake', '~> 13.0'
+  spec.add_runtime_dependency 'stackprof', '~> 0.2.18'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

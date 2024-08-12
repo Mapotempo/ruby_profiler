@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "rake/profiler"
+require "rake-profiler"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
