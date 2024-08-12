@@ -1,4 +1,4 @@
-module RakeProfiler::Rails
+module RakeProfiler::RailsProfiler
   def self.initialize!(app)
     raise "RakeProfilerRails initialized twice. Set `require: false' for rack-profiler in your Gemfile" if defined?(@already_initialized) && @already_initialized
 

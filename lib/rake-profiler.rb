@@ -7,5 +7,5 @@ module RakeProfiler
 end
 
 if defined?(::Rails) && defined?(::Rails::VERSION) && ::Rails::VERSION::MAJOR.to_i >= 3
-  require 'rake-profiler/rails/railtie'
+  require 'rake-profiler/rails-profiler/railtie'
 end
