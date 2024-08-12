@@ -54,5 +54,10 @@ module RakeProfiler
     rescue ActionController::RoutingError
       nil
     end
+
+    # Replace any unsafe characters with an underscore
+    def sanitize_filename(filename)
+      filename.gsub(/[^0-9A-Za-z.\-]/, '_')
+    end
   end
 end
