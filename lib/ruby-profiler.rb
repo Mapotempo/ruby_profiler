@@ -1,11 +1,11 @@
-require "rake-profiler/version"
-require 'rake-profiler/middleware'
+require "ruby-profiler/version"
+require 'ruby-profiler/rack-profiler/middleware'
 
-module RakeProfiler
+module RubyProfiler
   class Error < StandardError; end
   # Your code goes here...
 end
 
 if defined?(::Rails) && defined?(::Rails::VERSION) && ::Rails::VERSION::MAJOR.to_i >= 3
-  require 'rake-profiler/rails-profiler/railtie'
+  require 'ruby-profiler/rails-profiler/railtie'
 end

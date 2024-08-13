@@ -1,3 +1,3 @@
-module RakeProfiler
+module RubyProfiler
   VERSION = "0.1.0"
 end

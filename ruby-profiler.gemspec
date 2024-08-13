@@ -1,22 +1,22 @@
-require_relative 'lib/rake-profiler/version'
+require_relative 'lib/ruby-profiler/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rake-profiler"
-  spec.version       = RakeProfiler::VERSION
+  spec.name          = "ruby-profiler"
+  spec.version       = RubyProfiler::VERSION
   spec.authors       = ["Giallombardo Nathan"]
   spec.email         = ["nagiallombardo@gmail.com"]
 
   spec.summary       = "rake profiler"
   spec.description   = "rake profiler"
-  spec.homepage      = "https://github.com/giallon/rake-profiler"
+  spec.homepage      = "https://github.com/giallon/ruby-profiler"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "https://github.com/giallon/rake-profiler"
+  spec.metadata["allowed_push_host"] = "https://github.com/giallon/ruby-profiler"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/giallon/rake-profiler"
-  spec.metadata["changelog_uri"] = "https://github.com/giallon/rake-profiler"
+  spec.metadata["source_code_uri"] = "https://github.com/giallon/ruby-profiler"
+  spec.metadata["changelog_uri"] = "https://github.com/giallon/ruby-profiler"
 
   spec.add_development_dependency 'rake', '~> 13.0'
   spec.add_runtime_dependency 'stackprof', '~> 0.2.18'
