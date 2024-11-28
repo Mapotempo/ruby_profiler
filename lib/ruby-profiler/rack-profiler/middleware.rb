@@ -50,9 +50,8 @@ module RubyProfiler
         hash = Rails.application.routes.recognize_path(path, method: method)
         return unless hash && hash[:controller] && hash[:action]
 
-        Rails.logger.info hash
         "#{hash[:controller]}##{hash[:action]}"
-      rescue ActionController::RoutingError
+      rescue
         nil
       end
 
